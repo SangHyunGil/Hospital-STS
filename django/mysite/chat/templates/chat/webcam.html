@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.3.1628005986//hands.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/webcam.css'%}">
+</head>
+
+<body>
+  <!-- <div id="cover">
+    <input type="text" size="100" id="login">
+    <button class="submit_button" onclick="connect()">submit</button>
+  </div> -->
+  <!-- {% comment %} <canvas class="output_canvas"></canvas> {% endcomment %} -->
+
+  <div class="container">
+    <div class="video_container">
+      <video class="input_video"></video>
+      <button id="send_button" onclick="send_data()">Toggle Button</button>
+      
+    </div>
+    <div class="chat_container">
+      <textarea id="chat-log" cols="30" rows="20"></textarea><br/>
+      <input id="chat-message-input" type="text" size="50"></input><br/>
+      <input id="chat-message-submit" type="button" value="Send"/>
+      <button id="reset_button" onclick="reset_log()">Reset Button</button>
+    </div>
+  </div>
+</body>
+<script src=" {% static 'js/mediapipe.js' %}"></script>
+<script src=" {% static 'js/websocket.js' %}"></script>
+<script>
+  connect();  
+</script>
+</html>

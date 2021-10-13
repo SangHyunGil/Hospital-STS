@@ -1,0 +1,9 @@
+.vscode/
+.tmp.py
+.tmp.js
+python/.ipynb_checkpoints/
+*.pyc
+
+./stgcn_project/data/
+
+*_dummy.py

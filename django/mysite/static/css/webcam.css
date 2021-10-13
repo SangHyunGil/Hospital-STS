@@ -1,0 +1,41 @@
+.input_video {
+    width: 960px;
+    height: 540px;
+}
+.output_canvas{
+    width: 640px;
+    height: 360px;
+}
+#chat-log {
+    font-size: 30px;
+}
+#cover{
+    width: 1920px;
+    height: 1080px;
+    background-color: beige;
+    position: absolute;
+    z-index: 100;
+}
+.container{
+    overflow: hidden;
+    width: 90%;
+    margin: 5%;
+
+}
+#send_button{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+
+}
+.video_container {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    margin: 2%;
+}
+.chat_container{
+    float: right;
+    width: 30%;
+    margin: 2%;
+}

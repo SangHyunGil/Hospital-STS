@@ -1,0 +1,20 @@
+<!-- chat/templates/chat/room.html -->
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Room</title>
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/main.css'%}">
+</head>
+
+<body>
+    <textarea id="chat-log" cols="100" rows="20"></textarea><br/>
+    <input id="chat-message-input" type="text" size="100"/><br/>
+    <input id="chat-message-submit" type="button" value="Send"/>
+    <div class="tmp_box"></div>
+</body>
+
+    <script src="{% static 'js/websocket.js'%}"></script>
+
+</html>
