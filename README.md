@@ -1,4 +1,4 @@
-# KOREATECH link 15th 졸업설계 repository
+# Hospital Sign To Speech
 
 ---
 
@@ -56,8 +56,9 @@ Redis-x64-5.0.10.msi 실행
 1. http://127.0.0.1:8000/chat/ 에 접속
 
 2. textarea에 아무 문자열(ex: tmp, lobby) 입력
+   
    >(lobby입력했다 가정) http://127.0.0.1:8000/chat/lobby/ 로 이동
-
+   
 3. 접속된 웹 페이지 안에는 textarea가 2개 있고 큰 곳에는 채팅이 보이고 작은곳에 채팅을 입력할 수 있다.
 
 4. 다른 브라우저(다른 탭)에서 똑같이  http://127.0.0.1:8000/chat/lobby/ 에 접속하거나  http://127.0.0.1:8000/chat/ 접속해서 textarea에 직전에 입력한 문자열 입력(예시로 lobby)
